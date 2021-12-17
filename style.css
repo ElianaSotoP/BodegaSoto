@@ -244,21 +244,39 @@ body {
 
 /* SECCION DEL MAIN  */
 
-.imagen-carrusel-content {
+.carrusel-content-general {
+  position: static;
   height: 11rem;
-  /*   border: 1px solid red; */
-  width: 100%;
 }
 @media (min-width: 768px) {
-  .imagen-carrusel-content {
-    height: 32rem;
+  .carrusel-content-general {
+    height: 28rem;
   }
 }
-
+.carrusel-content {
+  height: 14.2rem;
+  /*   border: 1px solid red; */
+  width: 100%;
+  position: static;
+}
+@media (min-width: 768px) {
+  .carrusel-content {
+    height: 36.4rem;
+  }
+}
+.carrusel-content-image{
+  position: static;
+  height: 14.2rem;
+}
+@media (min-width: 768px) {
+  .carrusel-content-image {
+    height: 36.4rem;
+  }
+}
 .imagen-carrusel {
   width: 100%;
-  height: 14.2rem;
   object-fit: cover;
+  /* position: static; */
 }
 @media (min-width: 768px) {
   .imagen-carrusel {
@@ -271,6 +289,7 @@ body {
   gap: 0.9rem;
   /* position:relative; */
   height: 5rem;
+  position: relative;
 }
 @media (min-width: 768px) {
   .content-circulos-carrusel {
@@ -286,6 +305,7 @@ body {
   border-radius: 100%;
   align-items: center;
   justify-content: center;
+
 }
 @media (min-width: 768px) {
   .circulos-carrusel {
