@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -40,16 +39,21 @@ $light-color: #ffff;
   width: $width;
   height: $height;
   font-size: $fontSize;
-  border-radius:$bordeRadius;
-
+  border-radius: $bordeRadius;
 }
-@mixin card-features($backgroundColor, $width,
-$height, $bordeRadius,$boxShadow,$padding){
+@mixin card-features(
+  $backgroundColor,
+  $width,
+  $height,
+  $bordeRadius,
+  $boxShadow,
+  $padding
+) {
   background-color: $backgroundColor;
   width: $width;
   height: $height;
-  border-radius:$bordeRadius;
-  box-shadow:$boxShadow;
+  border-radius: $bordeRadius;
+  box-shadow: $boxShadow;
   padding: $padding;
 }
 
@@ -347,8 +351,14 @@ $height, $bordeRadius,$boxShadow,$padding){
 .product-card {
   display: grid;
   grid-template-columns: 1fr;
-  @include card-features(rgba(243, 243, 243, 0.34), 16rem, 21rem, 1rem, 0px 4px 4px rgba(0, 0, 0, 0.09), 3rem 0.6rem 1.6rem 0.6rem);
- 
+  @include card-features(
+    rgba(243, 243, 243, 0.34),
+    16rem,
+    21rem,
+    1rem,
+    0px 4px 4px rgba(0, 0, 0, 0.09),
+    3rem 0.6rem 1.6rem 0.6rem
+  );
 }
 
 .product-image {
@@ -397,7 +407,6 @@ $height, $bordeRadius,$boxShadow,$padding){
   );
   color: $third-color-verdeAzul;
   justify-self: center;
-
 }
 .btn-comprar-producto:hover {
   background-color: $third-color-verdeAzul;
@@ -407,6 +416,7 @@ $height, $bordeRadius,$boxShadow,$padding){
 footer {
   background-color: $primary-color;
   width: 100vw;
+/*   border: 1px solid rgb(0, 255, 234); */
 }
 .social-media-content {
   margin-top: 2rem;
@@ -420,28 +430,28 @@ footer {
   height: 8.7rem;
   gap: 1.6rem;
   width: 100vw;
-  /*  border: 1px solid yellow; */
-}
-.social-media-content {
+  /* border: 1px solid yellow; */
   div {
     /*  border: 1px solid yellow; */
     height: 100%;
     display: flex;
   }
 }
+
 .scroll {
   display: flex;
   align-items: center;
   font-size: 1rem;
-  color: #f3f3f3;
-  /*  border: 1px solid yellow; */
+  color: $light-color-first;
+/*   border: 1px solid yellow; */
+  margin-right: 2rem;
 }
 .scroll {
   &:before {
     content: "";
     width: 10px;
     height: 10px;
-    background-color: #fefefe;
+    background-color: $light-color-first;
     border-radius: 50%;
     opacity: 1;
     animation: mouse 3s infinite;
@@ -466,12 +476,12 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
-.social-media-footer {
   img {
     height: 2rem;
     width: 1.8rem;
   }
+  
+
 }
 .programer-information {
   border-top: 0.001rem solid $secondary-color;
@@ -660,6 +670,11 @@ footer {
       height: 4.8rem;
       width: 4.3rem;
     }
+    .icon-instagram{
+      height: 5.5rem;
+      width: 5.5rem;
+      
+    }
   }
   .programer-information {
     p {
@@ -685,7 +700,14 @@ footer {
   grid-template-columns: 1fr;
   justify-items: center;
   margin-bottom: 1.5rem;
-  @include card-features(rgba(243, 243, 243, 0.34), 16rem, 21rem, 1rem, 0px 4px 4px rgba(0, 0, 0, 0.09), 1rem 0.6rem 1.6rem 0.6rem);
+  @include card-features(
+    rgba(243, 243, 243, 0.34),
+    16rem,
+    21rem,
+    1rem,
+    0px 4px 4px rgba(0, 0, 0, 0.09),
+    1rem 0.6rem 1.6rem 0.6rem
+  );
 }
 
 .categoria-card-content {
@@ -840,7 +862,7 @@ form {
     13.3rem,
     2.5rem,
     1.5rem,
-    5rem,
+    5rem
   );
   padding: 0rem 0.75rem;
   margin-bottom: 10px;
