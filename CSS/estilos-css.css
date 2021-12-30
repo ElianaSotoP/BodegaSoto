@@ -165,10 +165,9 @@ body {
   border-radius: 100%;
   align-items: center;
   justify-content: center; }
-
-.circulos-carrusel a {
-  color: #f3f3f3;
-  font-size: 0.8rem; }
+  .circulos-carrusel a {
+    color: #f3f3f3;
+    font-size: 0.8rem; }
 
 #abarrotes {
   background-color: #008571; }
@@ -210,12 +209,11 @@ body {
   height: 35rem;
   padding-left: 6.7rem;
   padding-top: 1.8rem; }
-
-.card-categoria-clasification p {
-  /* display: none; */
-  font-size: 2rem;
-  /*  background-color:red; */
-  margin-top: 1rem; }
+  .card-categoria-clasification p {
+    /* display: none; */
+    font-size: 2rem;
+    /*  background-color:red; */
+    margin-top: 1rem; }
 
 .cards-content-general {
   padding: 2.1 2.1rem;
@@ -284,10 +282,9 @@ body {
 .product-image {
   display: flex;
   justify-content: center; }
-
-.product-image img {
-  width: 8.7rem;
-  height: 5.3rem; }
+  .product-image img {
+    width: 8.7rem;
+    height: 5.3rem; }
 
 .cantidad-product-content {
   display: flex;
@@ -299,9 +296,8 @@ body {
   border-radius: 3rem;
   justify-self: center;
   padding: 0 1rem; }
-
-.cantidad-product-content span {
-  font-size: 1.4rem; }
+  .cantidad-product-content span {
+    font-size: 1.4rem; }
 
 .precio-product {
   justify-self: start;
@@ -318,10 +314,9 @@ body {
   border-radius: 3rem;
   color: #00859c;
   justify-self: center; }
-
-.btn-comprar-producto:hover {
-  background-color: #00859c;
-  color: #f3f3f3; }
+  .btn-comprar-producto:hover {
+    background-color: #00859c;
+    color: #f3f3f3; }
 
 /* SECCION DEL FOOTER */
 footer {
@@ -352,15 +347,14 @@ footer {
   color: #f3f3f3;
   /*   border: 1px solid yellow; */
   margin-right: 2rem; }
-
-.scroll:before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #f3f3f3;
-  border-radius: 50%;
-  opacity: 1;
-  animation: mouse 3s infinite; }
+  .scroll:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 3s infinite; }
 
 @keyframes mouse {
   0% {
@@ -427,14 +421,14 @@ footer {
   .menu-content {
     gap: 3.8rem;
     width: 55rem; }
-  .menu-content li a {
-    font-size: 2.5rem; }
+    .menu-content li a {
+      font-size: 2.5rem; }
+    .menu-content li:hover {
+      width: 16.1rem;
+      height: 5rem; }
   .menu-inicio {
     display: inline;
     font-size: 2.5rem; }
-  .menu-content li:hover {
-    width: 16.1rem;
-    height: 5rem; }
   .carrito a img {
     height: 3rem;
     width: 3.3rem; }
@@ -458,8 +452,8 @@ footer {
   .circulos-carrusel {
     width: 14.9rem;
     height: 14.9rem; }
-  .circulos-carrusel a {
-    font-size: 2rem; }
+    .circulos-carrusel a {
+      font-size: 2rem; }
   .products-content {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -489,8 +483,8 @@ footer {
   .cantidad-product-content {
     width: 8.4rem;
     height: 2.4 rem; }
-  .cantidad-product-content span {
-    font-size: 1.6rem; }
+    .cantidad-product-content span {
+      font-size: 1.6rem; }
   .precio-product {
     font-size: 2.5rem; }
   .description-product {
@@ -536,10 +530,9 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
   padding: 1rem 0.6rem 1.6rem 0.6rem;
   /* aplicadas en la linea 356 y la linea 705 */ }
-
-.categoria-card-content figure img {
-  width: 12rem;
-  height: 10.8rem; }
+  .categoria-card-content figure img {
+    width: 12rem;
+    height: 10.8rem; }
 
 .btn-ingresar-categoria {
   width: 9.8rem;
@@ -548,10 +541,9 @@ footer {
   border-radius: 3rem;
   border: #00859c;
   color: #00859c; }
-
-.btn-ingresar-categoria:hover {
-  background-color: #00859c;
-  color: #f3f3f3; }
+  .btn-ingresar-categoria:hover {
+    background-color: #00859c;
+    color: #f3f3f3; }
 
 /* BREAKPOINT PARA PC --CATEGORIAS--*/
 @media (min-width: 768px) {
@@ -580,11 +572,10 @@ footer {
   margin-top: 2rem;
   /*  border: 1px solid #0e1796; */
   width: 100%; }
-
-.mapa-content iframe {
-  margin-top: 1rem;
-  width: 100%;
-  border-radius: 10px; }
+  .mapa-content iframe {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 10px; }
 
 /* breakpoint para desktop de Nosotros */
 @media (min-width: 768px) {
