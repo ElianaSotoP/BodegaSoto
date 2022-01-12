@@ -197,25 +197,22 @@ $light-color: #ffff;
 .carrusel-content-general {
   position: static;
   height: 11rem;
-}
-
-.carrusel-content {
-  height: 14.2rem;
-  /*   border: 1px solid red; */
-  width: 100%;
-  position: static;
+  
+  
 }
 
 .carrusel-content-image {
   position: static;
   height: 14.2rem;
+  
 }
-
 .imagen-carrusel {
   width: 100%;
   object-fit: cover;
   /* position: static; */
 }
+
+
 
 .content-circulos-carrusel {
   display: flex;
@@ -271,12 +268,14 @@ $light-color: #ffff;
   font-size: 3rem;
   text-align: center;
   margin-bottom: 0.9rem;
+  padding-left: 2rem;
+  padding-top: 0.2rem;
 }
 .card-categoria-clasification {
   display: none;
   background-color: rgba(243, 243, 243, 0.34);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 32rem;
+  width: 29rem;
   height: 35rem;
   padding-left: 6.7rem;
   padding-top: 1.8rem;
@@ -289,8 +288,8 @@ $light-color: #ffff;
 }
 
 .cards-content-general {
-  padding: 2.1 2.1rem;
-  /*  background-color:greenyellow; */
+  padding: 0 2.5rem;
+   /* background-color:greenyellow; */
 }
 .titlle-cards-content {
   display: flex;
@@ -347,6 +346,7 @@ $light-color: #ffff;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   gap: 0.9rem;
+
 }
 .product-card {
   display: grid;
@@ -359,6 +359,17 @@ $light-color: #ffff;
     0px 4px 4px rgba(0, 0, 0, 0.09),
     3rem 0.6rem 1.6rem 0.6rem
   );
+  &:hover{
+    box-shadow: 0px 5px 10px rgba(99, 96, 96, 0.63);
+    .precio-product{
+      color: $third-color-colorado;
+    }
+    .btn-comprar-producto{
+      background-color: $third-color-verdeAzul;
+      color: $light-color-first;
+    }
+
+  }
 }
 
 .product-image {
@@ -367,6 +378,7 @@ $light-color: #ffff;
   img {
     width: 8.7rem;
     height: 5.3rem;
+    object-fit: contain;
   }
 }
 
@@ -389,26 +401,25 @@ $light-color: #ffff;
 
 .precio-product {
   justify-self: start;
-  color: $third-color-colorado;
+  color: $third-color-verdeAzul;
   font-size: 1.4rem;
   font-weight: bold;
+  
 }
 
 .btn-comprar-producto {
   @include btn-features(
     $complementary-color-gris-claro,
     $third-color-verdeAzul,
-    9.8rem,
-    2.4rem,
+    11rem,
+    2.5rem,
     1.5rem,
     3rem
   );
+  margin-top:1rem;
   color: $third-color-verdeAzul;
   justify-self: center;
-  &:hover{
-    background-color: $third-color-verdeAzul;
-    color: $light-color-first;
-  }
+  
 }
 
 /* SECCION DEL FOOTER */
@@ -613,10 +624,14 @@ footer {
   .titlle-cards {
     font-size: 3rem;
   }
+  .cards-content-general {
+    padding: 0 0 0 5rem;
+     /* background-color:greenyellow; */
+  }
   .cards-content {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: end;
-    padding: 0 11rem;
+    padding: 0 0 0 0;
   }
   .titlle-cards-content {
     height: 5rem;
@@ -648,8 +663,8 @@ footer {
     font-size: 1.4rem;
   }
   .btn-comprar-producto {
-    width: 13.4rem;
-    height: 3.3rem;
+    width: 20rem;
+    height: 3.5rem;
     font-size: 1.8rem;
   }
   /* SECCION DEL FOOTER */
@@ -681,8 +696,8 @@ footer {
 .categoria-card-content-general {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-content: center; /* 
-  border: 1px solid green; */
+  place-content: center; 
+/*   border: 1px solid green; */
   justify-items: center;
 }
 .categoria-card-content {
@@ -697,14 +712,23 @@ footer {
     21rem,
     1rem,
     0px 4px 4px rgba(0, 0, 0, 0.09),
-    1rem 0.6rem 1.6rem 0.6rem
+    1rem 1rem 1.6rem 1rem
   );
+  &:hover{
+    box-shadow: 0px 5px 10px rgba(99, 96, 96, 0.63);
+    .btn-ingresar-categoria {
+      background-color: $third-color-verdeAzul;
+    color: $light-color-first;
+    }
+    }
   figure {
     img {
       width: 12rem;
       height: 10.8rem;
+      object-fit: cover;
     }
   }
+  
 }
 
 
@@ -715,21 +739,33 @@ footer {
   border-radius: 3rem;
   border: $third-color-verdeAzul;
   color: $third-color-verdeAzul;
-  &:hover {
-    background-color: $third-color-verdeAzul;
-    color: $light-color-first;
-  }
 }
 
 /* BREAKPOINT PARA PC --CATEGORIAS--*/
 @media (min-width: 768px) {
   .categoria-card-content-general {
     grid-template-columns: repeat(4, 1fr);
+    padding:0 15rem;
   }
   .categoria-card-content {
     width: 25.7rem;
-    height: 27.2rem;
+    height: 35rem;
+    span{
+      font-size:1.6rem;
+      margin-bottom:2rem;
+    }
+    figure{
+      img{
+        width:22rem;
+        height:15rem;
+      }
+    }
   }
+  .btn-ingresar-categoria {
+    width: 22rem;
+    height: 3.7rem;
+    font-size: 1.7rem;
+      }
 }
 /* NOTROS.HTML */
 

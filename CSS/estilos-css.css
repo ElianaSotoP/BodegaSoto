@@ -135,12 +135,6 @@ body {
   position: static;
   height: 11rem; }
 
-.carrusel-content {
-  height: 14.2rem;
-  /*   border: 1px solid red; */
-  width: 100%;
-  position: static; }
-
 .carrusel-content-image {
   position: static;
   height: 14.2rem; }
@@ -199,13 +193,15 @@ body {
   border-radius: 2rem;
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 0.9rem; }
+  margin-bottom: 0.9rem;
+  padding-left: 2rem;
+  padding-top: 0.2rem; }
 
 .card-categoria-clasification {
   display: none;
   background-color: rgba(243, 243, 243, 0.34);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 32rem;
+  width: 29rem;
   height: 35rem;
   padding-left: 6.7rem;
   padding-top: 1.8rem; }
@@ -216,8 +212,8 @@ body {
     margin-top: 1rem; }
 
 .cards-content-general {
-  padding: 2.1 2.1rem;
-  /*  background-color:greenyellow; */ }
+  padding: 0 2.5rem;
+  /* background-color:greenyellow; */ }
 
 .titlle-cards-content {
   display: flex;
@@ -278,13 +274,21 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
   padding: 3rem 0.6rem 1.6rem 0.6rem;
   /* aplicadas en la linea 356 y la linea 705 */ }
+  .product-card:hover {
+    box-shadow: 0px 5px 10px rgba(99, 96, 96, 0.63); }
+    .product-card:hover .precio-product {
+      color: #ec2836; }
+    .product-card:hover .btn-comprar-producto {
+      background-color: #00859c;
+      color: #f3f3f3; }
 
 .product-image {
   display: flex;
   justify-content: center; }
   .product-image img {
     width: 8.7rem;
-    height: 5.3rem; }
+    height: 5.3rem;
+    object-fit: contain; }
 
 .cantidad-product-content {
   display: flex;
@@ -301,22 +305,20 @@ body {
 
 .precio-product {
   justify-self: start;
-  color: #ec2836;
+  color: #00859c;
   font-size: 1.4rem;
   font-weight: bold; }
 
 .btn-comprar-producto {
   background-color: #efefef;
   border: 1px solid #00859c;
-  width: 9.8rem;
-  height: 2.4rem;
+  width: 11rem;
+  height: 2.5rem;
   font-size: 1.5rem;
   border-radius: 3rem;
+  margin-top: 1rem;
   color: #00859c;
   justify-self: center; }
-  .btn-comprar-producto:hover {
-    background-color: #00859c;
-    color: #f3f3f3; }
 
 /* SECCION DEL FOOTER */
 footer {
@@ -466,10 +468,13 @@ footer {
     display: inline-block; }
   .titlle-cards {
     font-size: 3rem; }
+  .cards-content-general {
+    padding: 0 0 0 5rem;
+    /* background-color:greenyellow; */ }
   .cards-content {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: end;
-    padding: 0 11rem; }
+    padding: 0 0 0 0; }
   .titlle-cards-content {
     height: 5rem; }
   .product-card {
@@ -490,8 +495,8 @@ footer {
   .description-product {
     font-size: 1.4rem; }
   .btn-comprar-producto {
-    width: 13.4rem;
-    height: 3.3rem;
+    width: 20rem;
+    height: 3.5rem;
     font-size: 1.8rem; }
   /* SECCION DEL FOOTER */
   .scroll {
@@ -513,8 +518,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-content: center;
-  /* 
-  border: 1px solid green; */
+  /*   border: 1px solid green; */
   justify-items: center; }
 
 .categoria-card-content {
@@ -528,11 +532,17 @@ footer {
   height: 21rem;
   border-radius: 1rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
-  padding: 1rem 0.6rem 1.6rem 0.6rem;
+  padding: 1rem 1rem 1.6rem 1rem;
   /* aplicadas en la linea 356 y la linea 705 */ }
+  .categoria-card-content:hover {
+    box-shadow: 0px 5px 10px rgba(99, 96, 96, 0.63); }
+    .categoria-card-content:hover .btn-ingresar-categoria {
+      background-color: #00859c;
+      color: #f3f3f3; }
   .categoria-card-content figure img {
     width: 12rem;
-    height: 10.8rem; }
+    height: 10.8rem;
+    object-fit: cover; }
 
 .btn-ingresar-categoria {
   width: 9.8rem;
@@ -541,17 +551,25 @@ footer {
   border-radius: 3rem;
   border: #00859c;
   color: #00859c; }
-  .btn-ingresar-categoria:hover {
-    background-color: #00859c;
-    color: #f3f3f3; }
 
 /* BREAKPOINT PARA PC --CATEGORIAS--*/
 @media (min-width: 768px) {
   .categoria-card-content-general {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 15rem; }
   .categoria-card-content {
     width: 25.7rem;
-    height: 27.2rem; } }
+    height: 35rem; }
+    .categoria-card-content span {
+      font-size: 1.6rem;
+      margin-bottom: 2rem; }
+    .categoria-card-content figure img {
+      width: 22rem;
+      height: 15rem; }
+  .btn-ingresar-categoria {
+    width: 22rem;
+    height: 3.7rem;
+    font-size: 1.7rem; } }
 
 /* NOTROS.HTML */
 .tittle-nosotros {
