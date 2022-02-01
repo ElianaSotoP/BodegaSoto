@@ -26,15 +26,12 @@ body {
   z-index: 2; }
 
 .header-content {
-  padding-top: 1rem;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 17% 83%;
   height: 100%; }
 
 .logo-content {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-self: end; }
 
 .logo img {
   width: 6rem;
@@ -42,8 +39,9 @@ body {
   object-fit: contain; }
 
 .superior-content-header {
+  padding-top: 1.8rem;
   display: flex;
-  gap: 0.6rem;
+  gap: 1rem;
   align-items: center;
   /*  border: 1px solid rgb(255, 0, 64); */
   margin-bottom: 1rem; }
@@ -92,17 +90,17 @@ body {
 
 .inferior-content-header {
   display: flex;
-  /*   background-color: yellowgreen; */
+  /*    background-color: yellowgreen; */
   height: 30%;
   align-items: center;
   justify-content: space-between;
-  padding-right: 20rem; }
+  padding-right: 7rem; }
 
 .menu-content {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   width: 25rem;
-  /*    border: 1px solid red; */ }
+  /*   border: 1px solid red; */ }
   .menu-content li {
     list-style: none; }
     .menu-content li a {
@@ -119,16 +117,21 @@ body {
   border-radius: 2rem;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  /* transform:scale(1); */ }
 
-.carrito a img {
-  height: 1.9rem;
-  width: 1.9rem; }
+.carrito a {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem; }
+  .carrito a img {
+    height: 1.9rem;
+    width: 1.9rem; }
 
 .carrito span {
   display: none;
   color: #f3f3f3;
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
 
 /* SECCION DEL MAIN  */
 .carrusel-content-general {
@@ -198,18 +201,7 @@ body {
   padding-top: 0.2rem; }
 
 .card-categoria-clasification {
-  display: none;
-  background-color: rgba(243, 243, 243, 0.34);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 29rem;
-  height: 35rem;
-  padding-left: 6.7rem;
-  padding-top: 1.8rem; }
-  .card-categoria-clasification p {
-    /* display: none; */
-    font-size: 2rem;
-    /*  background-color:red; */
-    margin-top: 1rem; }
+  display: none; }
 
 .cards-content-general {
   padding: 0 2.5rem;
@@ -323,117 +315,276 @@ body {
 /* SECCION DEL FOOTER */
 footer {
   background-color: #06002d;
-  width: 100vw;
-  /*   border: 1px solid rgb(0, 255, 234); */ }
+  width: 100vw; }
+  footer .footer-container {
+    margin: 0 2rem;
+    display: grid;
+    text-align: center;
+    color: #f3f3f3; }
+    footer .footer-container .contacto {
+      padding: 2rem 0;
+      border-bottom: 1px solid #f9445d; }
+      footer .footer-container .contacto .redes-sociales nav a img {
+        width: 2.5rem;
+        height: 2.5rem; }
+  footer .categorias-footer {
+    padding: 2rem 0;
+    border-bottom: 1px solid #f9445d; }
+  footer .atencion-cliente {
+    padding: 2rem 0;
+    border-bottom: 1px solid #f9445d; }
+  footer .programer-information {
+    padding: 2rem 0; }
 
-.social-media-content {
+/* .social-media-content {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*   background-color: $secondary-color ; */
-  /*   background-image: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%); */
+  //background-image: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%); 
+
   height: 8.7rem;
   gap: 1.6rem;
   width: 100vw;
-  /* border: 1px solid yellow; */ }
-  .social-media-content div {
-    /*  border: 1px solid yellow; */
-    height: 100%;
-    display: flex; }
 
-.scroll {
+  div {
+  
+    height: 100%;
+    display: flex;
+  }
+} */
+/* .scroll {
   display: flex;
   align-items: center;
   font-size: 1rem;
-  color: #f3f3f3;
-  /*   border: 1px solid yellow; */
-  margin-right: 2rem; }
-  .scroll:before {
+  color: $light-color-first;
+  margin-right: 2rem;
+  &:before {
     content: "";
     width: 10px;
     height: 10px;
-    background-color: #f3f3f3;
+    background-color: $light-color-first;
     border-radius: 50%;
     opacity: 1;
-    animation: mouse 3s infinite; }
-
-@keyframes mouse {
+    animation: mouse 3s infinite;
+  }
+} */
+/* @keyframes mouse {
   0% {
     opacity: 1;
-    margin-top: 5px; }
+    margin-top: 5px;
+  }
   70% {
-    opacity: 0.5; }
+    opacity: 0.5;
+  }
   100% {
     opacity: 0;
-    margin-top: 15px; } }
-
-.social-media-footer {
+    margin-top: 15px;
+  }
+} */
+/* .social-media-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem; }
-  .social-media-footer img {
+  gap: 1rem;
+  img {
     height: 2rem;
-    width: 1.8rem; }
+    width: 1.8rem;
+  }
+  
 
-.programer-information {
-  border-top: 0.001rem solid #f9445d;
+} */
+/* .programer-information {
+  border-top: 0.001rem solid $secondary-color;
   text-align: center;
-  padding: 3rem 0; }
-  .programer-information p {
+  padding: 3rem 0;
+  p {
     font-size: 1rem;
-    color: #f3f3f3; }
-
-/* BREAK POINT PARA PC*/
+    color: #f3f3f3;
+  }
+} */
 @media (min-width: 768px) {
   body {
-    padding-top: 22rem; }
+    padding-top: 16.5rem; }
   .header {
-    height: 21rem; }
-  .header-content {
+    height: 16rem; }
+  .logo img {
+    padding-top: 4rem;
+    height: 8rem;
+    width: 8rem; }
+  .superior-content-header {
+    gap: 2rem;
     padding-top: 4.4rem; }
+  .search-content {
+    height: 3.9rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem; }
+  .lupa {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .input-search {
+    width: 32rem;
+    font-size: 1.4rem;
+    margin-right: 9rem; }
+  .teclado {
+    display: inline;
+    width: 1.4rem;
+    height: 1.5rem; }
+  .btn-ingresar {
+    width: 10rem;
+    height: 3.4rem;
+    font-size: 1.4rem; }
+  .inferior-content-header {
+    height: 48%;
+    align-items: center;
+    padding-right: 20rem; }
+  .menu-content {
+    gap: 3.8rem;
+    width: 50rem; }
+    .menu-content li a {
+      font-size: 1.6rem; }
+    .menu-content li:hover {
+      width: 10rem;
+      height: 3.4rem; }
+  .menu-inicio {
+    display: flex;
+    font-size: 2.5rem; }
+  .carrito a img {
+    height: 2.3rem;
+    width: 2.5rem; }
+  .carrito span {
+    display: inline;
+    height: 3rem;
+    width: 3.3rem;
+    font-size: 1.2rem; }
+  /* SECCION DEL MAIN  */
+  .carrusel-content-general {
+    height: 23rem; }
+  .carrusel-content {
+    height: 28.4rem; }
+  .carrusel-content-image {
+    height: 28.4rem; }
+  .imagen-carrusel {
+    height: 28.4rem; }
+  .content-circulos-carrusel {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    /* position:relative; */
+    height: 9.9rem; }
+  .circulos-carrusel {
+    width: 7.9rem;
+    height: 7.9rem; }
+    .circulos-carrusel a {
+      font-size: 2rem; }
+  .products-content {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 2rem;
+    /*   border: 1px solid red; */
+    padding: 0 3rem; }
+  .parrafo-categorias {
+    display: flex;
+    color: #ffff;
+    background-color: #00859c;
+    width: 17rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.9rem;
+    padding-left: 2rem;
+    padding-top: 0.2rem;
+    margin-bottom: 1rem; }
+  .card-categoria-clasification {
+    display: inline-block;
+    background-color: rgba(243, 243, 243, 0.34);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 17rem;
+    height: 25rem;
+    padding-left: 4rem;
+    padding-top: 1.8rem; }
+    .card-categoria-clasification p {
+      /* display: none; */
+      font-size: 1.2rem;
+      /*  background-color:red; */
+      margin-top: 1rem; }
+  .titlle-cards {
+    font-size: 2rem; }
+  .cards-content-general {
+    padding: 0 0 0 5rem;
+    /* background-color:greenyellow; */ }
+  .cards-content {
+    grid-template-columns: repeat(3, 1fr); }
+  /* SECCION DEL FOOTER */
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30rem 10rem;
+    grid-template-areas: "footer1 footer2 footer3" "ownerInformation ownerInformation ownerInformation";
+    font-size: 1.2rem;
+    justify-items: center; }
+    .footer-container .contacto {
+      grid-area: footer1; }
+    .footer-container .categorias-footer {
+      grid-area: footer2;
+      text-align: justify; }
+    .footer-container .atencion-cliente {
+      grid-area: footer3;
+      text-align: justify; }
+    .footer-container .programer-information {
+      grid-area: ownerInformation;
+      text-align: center; } }
+
+@media (min-width: 1024px) {
+  body {
+    padding-top: 17rem; }
+  .header {
+    height: 16rem; }
   .logo img {
     height: 12rem;
     width: 12rem; }
+  .superior-content-header {
+    gap: 4rem;
+    padding-top: 4.4rem; }
   .search-content {
-    height: 6.1rem;
+    height: 3.9rem;
     display: flex;
     align-items: center;
     padding: 0 2.5rem; }
   .lupa {
-    width: 2.5rem;
-    height: 2.5rem; }
+    width: 2rem;
+    height: 2rem; }
   .input-search {
-    width: 60rem;
-    font-size: 2.5rem;
+    width: 64.5rem;
+    font-size: 1.6rem;
     margin-right: 20rem; }
   .teclado {
-    display: block;
-    width: 2.4rem;
-    height: 2.5rem; }
+    display: inline;
+    width: 1.9rem;
+    height: 2rem; }
   .btn-ingresar {
     width: 11.2rem;
-    height: 5rem;
-    font-size: 2.5rem; }
+    height: 3.9rem;
+    font-size: 1.6rem; }
   .inferior-content-header {
     height: 48%;
     align-items: center;
-    padding-right: 15.9rem; }
+    padding-right: 20rem; }
   .menu-content {
     gap: 3.8rem;
     width: 55rem; }
     .menu-content li a {
-      font-size: 2.5rem; }
+      font-size: 2rem; }
     .menu-content li:hover {
-      width: 16.1rem;
-      height: 5rem; }
+      width: 11.5rem;
+      height: 3.9rem; }
   .menu-inicio {
-    display: inline;
+    display: flex;
     font-size: 2.5rem; }
   .carrito a img {
-    height: 3rem;
-    width: 3.3rem; }
+    height: 2.3rem;
+    width: 2.5rem; }
   .carrito span {
     display: inline;
     height: 3rem;
@@ -463,9 +614,30 @@ footer {
     /*   border: 1px solid red; */
     padding: 0 9rem; }
   .parrafo-categorias {
-    display: flex; }
+    display: flex;
+    color: #ffff;
+    background-color: #00859c;
+    width: 29.4rem;
+    height: 5rem;
+    border-radius: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0.9rem;
+    padding-left: 2rem;
+    padding-top: 0.2rem; }
   .card-categoria-clasification {
-    display: inline-block; }
+    display: inline-block;
+    background-color: rgba(243, 243, 243, 0.34);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 29rem;
+    height: 35rem;
+    padding-left: 6.7rem;
+    padding-top: 1.8rem; }
+    .card-categoria-clasification p {
+      /* display: none; */
+      font-size: 2rem;
+      /*  background-color:red; */
+      margin-top: 1rem; }
   .titlle-cards {
     font-size: 3rem; }
   .cards-content-general {
@@ -476,7 +648,8 @@ footer {
     justify-content: end;
     padding: 0 0 0 0; }
   .titlle-cards-content {
-    height: 5rem; }
+    height: 5rem;
+    margin-bottom: 4rem; }
   .product-card {
     width: 23.7rem;
     height: 30.7rem;
@@ -499,16 +672,41 @@ footer {
     height: 3.5rem;
     font-size: 1.8rem; }
   /* SECCION DEL FOOTER */
-  .scroll {
-    font-size: 2.5rem; }
-  .social-media-footer img {
-    height: 4.8rem;
-    width: 4.3rem; }
-  .social-media-footer .icon-instagram {
-    height: 5.5rem;
-    width: 5.5rem; }
-  .programer-information p {
-    font-size: 2.2rem; } }
+  /* .scroll {
+    font-size: 2.5rem;
+  }
+  .social-media-footer {
+    img {
+      height: 4.8rem;
+      width: 4.3rem;
+    }
+    .icon-instagram {
+      height: 5.5rem;
+      width: 5.5rem;
+    }
+  }
+  .programer-information {
+    p {
+      font-size: 2.2rem;
+    }
+  } */
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30rem 10rem;
+    grid-template-areas: "footer1 footer2 footer3" "ownerInformation ownerInformation ownerInformation";
+    font-size: 1.4rem;
+    justify-items: center; }
+    .footer-container .contacto {
+      grid-area: footer1; }
+    .footer-container .categorias-footer {
+      grid-area: footer2;
+      text-align: justify; }
+    .footer-container .atencion-cliente {
+      grid-area: footer3;
+      text-align: justify; }
+    .footer-container .programer-information {
+      grid-area: ownerInformation;
+      text-align: center; } }
 
 /* PARTE DE CATEGORIAS.HTML */
 .main-categoria {
@@ -534,6 +732,8 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
   padding: 1rem 1rem 1.6rem 1rem;
   /* aplicadas en la linea 356 y la linea 705 */ }
+  .categoria-card-content span {
+    height: 7rem; }
   .categoria-card-content:hover {
     box-shadow: 0px 5px 10px rgba(99, 96, 96, 0.63); }
     .categoria-card-content:hover .btn-ingresar-categoria {
@@ -545,15 +745,21 @@ footer {
     object-fit: cover; }
 
 .btn-ingresar-categoria {
-  width: 9.8rem;
-  height: 2.4rem;
+  width: 11.5rem;
+  height: 2.9rem;
   justify-self: center;
   border-radius: 3rem;
   border: #00859c;
   color: #00859c; }
 
-/* BREAKPOINT PARA PC --CATEGORIAS--*/
+/* BREAKPOINT PARA TABLET--CATEGORIAS--*/
 @media (min-width: 768px) {
+  .categoria-card-content-general {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 3rem; } }
+
+/* BREAKPOINT PARA PC --CATEGORIAS--*/
+@media (min-width: 1024px) {
   .categoria-card-content-general {
     grid-template-columns: repeat(4, 1fr);
     padding: 0 15rem; }
@@ -571,7 +777,7 @@ footer {
     height: 3.7rem;
     font-size: 1.7rem; } }
 
-/* NOTROS.HTML */
+/* NOSOTROS.HTML */
 .tittle-nosotros {
   display: flex;
   justify-content: start;
@@ -595,8 +801,27 @@ footer {
     width: 100%;
     border-radius: 10px; }
 
-/* breakpoint para desktop de Nosotros */
+/* breakpoint para TABLET de Nosotros */
 @media (min-width: 768px) {
+  .general-content-nosotros {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    margin-top: 1.5rem;
+    /*   border: 1px solid red; */
+    padding: 0 7rem;
+    gap: 3;
+    justify-items: end; }
+  .nosotros-content {
+    width: 100%;
+    padding: 0 2.1rem;
+    /*   border: 1px solid #0e9647; */ }
+  .tittle-nosotros {
+    font-size: 2rem; }
+  .descripcion-nosotros {
+    font-size: 1.2rem; } }
+
+/* breakpoint para desktop de Nosotros */
+@media (min-width: 1024px) {
   .general-content-nosotros {
     display: grid;
     grid-template-columns: 20% 70%;
@@ -610,7 +835,7 @@ footer {
     padding: 0 2.1rem;
     /*   border: 1px solid #0e9647; */ }
   .tittle-nosotros {
-    font-size: 2.5rem; }
+    font-size: 2rem; }
   .descripcion-nosotros {
     font-size: 2rem; } }
 
